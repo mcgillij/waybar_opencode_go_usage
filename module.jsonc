@@ -1,0 +1,12 @@
+// Add this module to your waybar config (e.g. config-common.jsonc).
+// Signal 10 is unused in this setup (8 = pipewire, 12 = codexbar).
+"custom/opencode": {
+	"exec": "$HOME/.config/waybar/waybar_opencode/opencode_usage.py",
+	"return-type": "json",
+	"interval": 60,
+	"signal": 10,
+	"tooltip": true,
+	"format": "{}",
+	"on-click": "pkill -RTMIN+10 waybar",
+	"on-click-right": "xdg-open https://opencode.ai/console"
+}

@@ -1,0 +1,12 @@
+// Colors matching the tooltip palette; add to style.css if wanted.
+custom/opencode.warn {
+	color: #ffffa5;
+}
+custom/opencode.crit {
+	color: #dd532e;
+}
+custom/opencode.error,
+custom/opencode.nokey,
+custom/opencode.stale {
+	color: #ff9977;
+}
